@@ -17,7 +17,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <Wrapper>
         <Description>
           <Thumb>
-            <Avatar src={avatar} alt="User avatar" />
+            <Avatar src={avatar} alt="User avatar" width="150" />
           </Thumb>
 
           <Name>{username}</Name>
