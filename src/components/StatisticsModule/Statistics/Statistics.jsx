@@ -8,13 +8,13 @@ export const Statistics = ({ title, stats: data }) => {
     <Container>
       <Wrapper>
         {title && <StatisticsTitle>{title}</StatisticsTitle>}
-        {title && <StatisticsList data={data} />}
+        <StatisticsList data={data} />
       </Wrapper>
     </Container>
   );
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.array.isRequired,
 };
