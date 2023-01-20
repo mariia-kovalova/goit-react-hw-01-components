@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { Item, Label, Percentage } from './StatisticsItem.styled';
 
-export const StatisticsItem = ({ label, percentage }) => {
+export const StatisticsItem = ({ label, percentage, backgroundColor }) => {
   return (
-    <Item>
+    <Item backgroundColor={backgroundColor}>
       <Label>{label}</Label>
       <Percentage>{percentage}%</Percentage>
     </Item>
@@ -13,4 +13,5 @@ export const StatisticsItem = ({ label, percentage }) => {
 StatisticsItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
+  backgroundColor: PropTypes.string,
 };

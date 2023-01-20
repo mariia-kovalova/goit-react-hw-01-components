@@ -6,7 +6,7 @@ export const Item = styled.li`
   width: 80px;
   gap: 5px;
   padding: 10px;
-  background-color: gray;
+  background-color: ${({ backgroundColor }) => backgroundColor};
   border: 1px solid white;
 `;
 
