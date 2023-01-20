@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  margin: 30px auto 0;
-  padding: 20px;
+export const Wrapper = styled.div`
   max-width: 350px;
-  outline: dotted;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px dotted black;
   text-align: center;
+  border-radius: 10px;
 `;
 
 export const Description = styled.div`
@@ -13,6 +14,7 @@ export const Description = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  margin-bottom: 20px;
 `;
 
 export const Thumb = styled.div`

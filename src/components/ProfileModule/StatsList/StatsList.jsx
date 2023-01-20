@@ -1,9 +1,9 @@
-import { StatsItem } from 'components/StatsItem/StatsItem';
+import { StatsItem } from '../StatsItem/StatsItem';
 import { capitalize } from 'utils';
 import PropTypes from 'prop-types';
-import { List } from './StatsList.styled';
+import { List } from 'components/GlobalStyles.styled';
 
-export function StatsList({ stats }) {
+export const StatsList = ({ stats }) => {
   return (
     <List>
       {Object.entries(stats).map(([name, value]) => {
@@ -13,7 +13,7 @@ export function StatsList({ stats }) {
       })}
     </List>
   );
-}
+};
 
 StatsList.propTypes = {
   stats: PropTypes.objectOf(PropTypes.number.isRequired),

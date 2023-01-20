@@ -7,6 +7,7 @@ export const Item = styled.li`
   flex-basis: calc(100% / 3);
   padding: 10px;
   background-color: #f08080;
+  border: 1px solid white;
 `;
 export const Label = styled.span`
   color: #f0f8ff;
